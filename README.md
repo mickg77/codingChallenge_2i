@@ -39,4 +39,9 @@ If the number is found then a match has been found, and the count can be increme
 
 NB
 My first attempt at this is not working fully -
-I have not adhered the code to use one code first.  Possible solution are to send values into another array or use a hashmap.
+I have not adhered the code to use one code first.  
+Possible solution are to send values into another array or use a hashmap.
+
+Update
+
+Code updated to move used values into an ArrayList.  This list can then be checked to see if the pairing has already been used.

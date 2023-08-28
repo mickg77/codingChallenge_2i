@@ -18,7 +18,7 @@ public class SumFinderTest {
         SumFinder test1 = new SumFinder();
         int[] testArray2 = {0,15,32,2000,15000};
         test1.pairs(15,testArray2);
-        Assertions.assertEquals(test1.pairs(1,testArray2),1); //test failed due to logical error in algorithm
+        Assertions.assertEquals(test1.pairs(15,testArray2),1); //test failed due to logical error in algorithm
 
     }
 
@@ -26,9 +26,9 @@ public class SumFinderTest {
     @Test
     public void setTest3() {
         SumFinder test1 = new SumFinder();
-        int[] testArray3 = {0,15,32,2000,15000};
-        test1.pairs(15,testArray3);
-        Assertions.assertEquals(test1.pairs(1,testArray3),2); //test failed due to logical error in algorithm
+        int[] testArray3 = {1,1,10,32,41};
+        test1.pairs(42,testArray3);
+        Assertions.assertEquals(test1.pairs(42,testArray3),2); //test failed due to logical error in algorithm
 
     }
 
