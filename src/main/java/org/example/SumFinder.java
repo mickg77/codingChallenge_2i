@@ -11,7 +11,7 @@ public class SumFinder {
          */
 
         int X = target; //take the parameter target and assign to X
-        int[] nums = arr; //take the array arr and assign it to nums
+
         ArrayList used = new ArrayList<>();
 
         int pairs = 0; //initialise pairs to 0;
@@ -19,11 +19,11 @@ public class SumFinder {
         for (int i = 0; i < arr.length; i++) { //loop through the array once
             int aim = X - arr[i]; //find the necessary value to make the pair
 
-            if (used.contains(aim)) {
-                used.remove(Integer.valueOf(aim)); // Remove used values to avoid duplicates
-                pairs++;
-            } else {
-                used.add(arr[i]); //simply add to the Arraylist used.
+            if (used.contains(aim)) {//we have found a match
+                used.remove(Integer.valueOf(aim)); // Remove used values to avoid duplicates, it can't be used again.
+                pairs++; //increment the number of pairs found by one
+            } else {//no match found so add it to the used ArrayList
+                used.add(arr[i]);
             }
         }
 
@@ -37,10 +37,5 @@ public class SumFinder {
     I added the else block to add the current array element to the used ArrayList if no matching pair has been found.
     Keep in mind that this code assumes you want to count unique pairs, meaning that if the same pair can be formed in a different order, it will only be counted once.
 */
-
-
-
-
-
 
 }

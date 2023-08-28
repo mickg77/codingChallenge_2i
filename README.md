@@ -44,4 +44,6 @@ Possible solution are to send values into another array or use a hashmap.
 
 Update
 
-Code updated to move used values into an ArrayList.  This list can then be checked to see if the pairing has already been used.
+Code updated to move used values into an ArrayList.  
+This list can then be checked to see if the pairing has already been used.
+Comments added to explain the logic
